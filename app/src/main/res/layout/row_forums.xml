@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="1dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="0dp"
+    app:contentPadding="1dp">
+
+    <RelativeLayout
+        android:id="@+id/forum1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/shape_rec1"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/dateTV1"
+            android:text="Date: "
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"/>
+
+        <ImageButton
+            android:id="@+id/moreBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/more_vert_gray"
+            android:layout_toEndOf="@id/messageTextView1"
+            android:layout_marginStart="10dp"
+            android:layout_below="@id/view"
+            android:padding="5dp"
+            android:background="@android:color/transparent"/>
+
+        <TextView
+            android:id="@+id/dateTV1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dd/MM/yyyy"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/white"
+            android:layout_marginEnd="20dp"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:textAlignment="center"/>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@id/user"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/background_light" />
+
+        <TextView
+            android:id="@+id/messageTextView1"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_below="@id/view"
+            android:layout_toEndOf="@id/profileIv"
+            style="@style/TextAppearance.MaterialComponents.Body2"
+            android:ellipsize="end"
+            android:textColor="@color/white"
+            android:maxLines="6"
+            android:text="The forum message"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/profileIv"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/view"
+            android:background="@color/white"
+            android:scaleType="centerCrop"
+            android:src="@drawable/person_gray"
+            app:shapeAppearanceOverlay="@style/styleRoundedCornersImage"/>
+
+        <TextView
+            android:id="@+id/user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username: "
+            android:layout_marginStart="20dp"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"></TextView>
+
+        <TextView
+            android:id="@+id/usernameTextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_toEndOf="@id/user"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:text="abc@gmail.com"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

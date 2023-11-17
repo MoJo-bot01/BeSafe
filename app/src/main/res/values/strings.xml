@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BeSafe</string>
+    <string name="title_activity_maps">MapsActivity</string>
+
+    <string name="filter_prompt">Select Alert Category</string>
+    <string-array name="filter_categories">
+        <item>All</item>
+        <item>Pending</item>
+        <item>Armed Responders Dispatched</item>
+        <item>Solved</item>
+        <item>Cancelled</item>
+    </string-array>
+</resources>

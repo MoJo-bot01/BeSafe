@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="1dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="0dp"
+    app:contentPadding="1dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_rec1">
+
+        <TextView
+            android:id="@+id/desc"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"
+            android:textAlignment="center"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:text="The type of alert:"/>
+
+        <TextView
+            android:id="@+id/descriptionTv"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="25dp"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:text="Sexual Abuse"/>
+
+        <TextView
+            android:id="@+id/date"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/desc"
+            android:layout_marginTop="15dp"
+            android:maxLines="1"
+            android:text="Date Sent:"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/dateTV"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/descriptionTv"
+            android:layout_marginTop="15dp"
+            android:maxLines="1"
+            android:text="dd/MM/yyyy"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/status"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/date"
+            android:layout_marginTop="15dp"
+            android:maxLines="1"
+            android:text="Status:"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/statusTV"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/dateTV"
+            android:layout_marginTop="15dp"
+            android:maxLines="1"
+            android:text="Okay"
+            android:textAlignment="center"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

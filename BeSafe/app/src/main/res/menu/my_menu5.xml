@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/learnBtn"
+        android:icon="@drawable/info_gray"
+        android:title="Learn" />
+    <item android:id="@+id/homeBtn"
+        android:icon="@drawable/home_gray"
+        android:title="Home"/>
+    <item android:id="@+id/forumBtn"
+        android:icon="@drawable/forum_gray"
+        android:title="Forum" />
+    <item android:id="@+id/hotspotsBtn"
+        android:icon="@drawable/danger_gray"
+        android:title="Hotspots" />
+
+    <item android:id="@+id/helpBtn"
+        android:icon="@drawable/help_gray"
+        android:title="Get Help" />
+</menu>

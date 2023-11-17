@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/supportiveOrganisationBtn"
+        android:icon="@drawable/home_gray"
+        android:title="Add Supportive Organisation"/>
+    <item android:id="@+id/emergencyAgencyBtn"
+        android:icon="@drawable/forum_gray"
+        android:title="Add Emergency Agency" />
+</menu>
